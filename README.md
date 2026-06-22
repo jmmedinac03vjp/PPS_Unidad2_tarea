@@ -1,4 +1,4 @@
-# Tarea Unidad 1 - RA5. Tarea para entregar Unidad1
+# Tarea Unidad 2 - Tarea RA2. Niveles de seguridad requeridos por las aplicaciones.
 
 **Lee la tarea hasta el final** para ver lo que tienes que entregar e ir cogiendo las evidencias y ver lo que tienes que documentar.
 
@@ -15,19 +15,8 @@
 ---
 
 # OBJETIVOS
-Esta actividad tiene como objetivo poner en práctica los contenidos tratados en esta unidad:
-
-- Analizar y comprender la estructura interna del código (clases, métodos, flujos de control) y su modelo de ejecución (transiciones de estado y manejo de excepciones) para determinar los puntos críticos de prueba.
-
-- Aplicar las herramientas del IDE (Integrated Development Environment) para la ejecución, depuración paso a paso y seguimiento del flujo de control, identificando y resolviendo posibles errores lógicos o de sintaxis.
-
-- Diseñar, implementar y ejecutar pruebas unitarias que cubran la totalidad de los requisitos funcionales y no funcionales, validando la lógica individual de cada componente del código.
-
-- Verificar que la aplicación maneja correctamente las reglas de negocio (precios, transiciones de fase y gestión de estados de error), tal como se define en la documentación.
-
-- Ejecutar la aplicación en un entorno controlado para simular su comportamiento en un contexto real, validando la interacción entre sus componentes y el entorno de runtime.
-
-
+- Saber manejar las principales listas en fuentes abiertas sobre vulnerabilidades, debilidades, etc., saber relacionarlas y  extraer información de ellas.
+- Saber aplicar el estandar ASVS e identificar las comprobaciones a realizar en una aplicación según el nivel de seguridad de la misma.
 ---
 
 # RESULTADOS DE APRENDIZAJE Y CRITERIOS DE EVALUACION
@@ -87,148 +76,34 @@ Utilizaremos **`GitHub Classroom`** para la entrega de esta actividad.
 > Deberás de añadir como colaborador en tu repositorio de GitHub al profesor: `PPSvjp` **Settings** > **Collaborators**.
 Lee la tarea hasta el final para ver lo que tienes que entregar e ir cogiendo las evidencias y ver lo que tienes que documentar.
 
-## 1. Documentación y prueba del programa
+Lee la tarea hasta el final para ver lo que tienes que entregar e ir cogiendo las evidencias y ver lo que tienes que documentar.
 
-Aquí tienes [un archivo comprimido con el código de la aplicacion `lavadero` y `main_app`.](./src.zip)   
-La aplicación de la que se proporciona el código, y con nombre `lavadero` se ha creado según las siguientes premisas:
+En esta ocasión la Tarea consiste en la realización de las tres actividades propuestas durante la unidad.
 
-1. Cuando se crea un lavadero, éste no tiene ingresos, no está ocupado, está en fase 0 y todas las opciones de lavado (prelavado a mano, secado a mano y encerado) están puestas a false.
-2. Cuando se intenta comprar un lavado con encerado pero sin secado a mano, se produce una ValueError.
-3. Cuando se intenta hacer un lavado mientras que otro ya está en marcha, se produce una ValueError.
-4. Si seleccionamos un lavado con prelavado a mano, los ingresos de lavadero son 6,50€.
-5. Si seleccionamos un lavado con secado a mano, los ingresos son 6,00€.
-6. Si seleccionamos un lavado con secado a mano y encerado, los ingresos son 7,20€.
-7. Si seleccionamos un lavado con prelavado a mano y secado a mano, los ingresos son 7,50€.
-8. Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado, los ingresos son 8,70€.
-9. Si seleccionamos un lavado sin extras y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 6, 0.
-10. Si seleccionamos un lavado con prelavado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 6, 0.
-11. Si seleccionamos un lavado con secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 0.12. 
-12. Si seleccionamos un lavado con secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 8, 0.
-13. Si seleccionamos un lavado con prelavado a mano y secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 0.
-14. Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 8, 0.
+## Apartado 1 - Trazado de vulnerabiliad.
+
+Este es el desarrollo de la actividad [Actividad-TrazadoVulnerabilidad](../Actividad-TrazadoVulnerabilidad/README.md).
+
+Realiza lo indicado en la sección `Entrega` de la actividad.
+
+## Apartado 2 - Análisis de vulnerabilidad en máquina vulnerable.
+
+Este es el desarrollo de la actividad [Actividad-MaquinasVulnerables](../Actividad-MaquinasVulnerables/README.md). 
+
+Realiza lo indicado en la sección `Entrega` de la actividad.
 
 
-> Utiliza el **IDE Visual Studio Code** o tu IDE preferido para hacer las siguientes acciones:
->
-> **Apartado 1**. Añade los comentarios al código de la aplicación indicando para que sirven las diferentes sentencias, funciones, etc. 
->> Si has realizado la actividad [Actividad-ElementosProgramaPython](../Actividad-ElementosProgramaPython/README.md) puedes adjuntar el `cuaderno Jupyter Notebook`, si no es así, inserta comentarios directamente en el código fuente. 
-> 
->
-> **Apartado 2**. Ejecuta el programa mediante las opciones de Ejecución y Depuración del IDE.
->
-> !!!IMPORTANTE¡¡¡ Este código tiene errores (tendrás que solucionar los errores antes de ejecutarlo). Este apartado tiene relación con la actividad [Actividad-EntornosDesarrollo](../Actividad-EntornosDesarrollo/README.md).
-> 
-> Documenta los errores encontrados indicando a que se debian esos errores y cómo lo has solucionado.
+## Apartado 3 - Comprobación de los requisitos de Seguridad de una aplicación.
 
-## 2. Realización de los test unitarios de la aplicación.
+Este es el desarrollo de la actividad [Actividad-ComprobaciónREquisitosSeguridadAplicación](../Actividad-ComprobacionRequisitosSeguridadAplicacion/README.md). 
 
-> Dado el [código que representa la aplicación de un lavadero de coches](./src.zip) que va pasando por diferentes fases, crea un clase de test en pyton3 (Pytest o Unittest, el que prefieras) llamada Lavadero que compruebe el funcionamiento del programa. 
->
-> Tienes el archivo de pruebas incluido en el archivo comprimido [test_lavadero_unittest.py](./src.zip) que te puede servir de inicio y ayuda para realizar los tests.
->
-> El **nombre de la función** que realiza el test debe de **contener en número del test**, por ejemplo: `def test1_estado_inicial_inactivo` se correspondería con el **test 1**.
->
-> Las diferentes **pruebas deben corresponderse con cada uno de los enunciados siguientes**, y deberán incluir en el  comentario, el **número de test** correspondiente:
-
-1. Cuando se crea un lavadero, éste no tiene ingresos, no está ocupado, está en fase 0 y todas las opciones de lavado (prelavado a mano, secado a mano y encerado) están puestas a false.
-
-Por ejemplo  parte del test 1 sería algo similar a esto en `Unittest`:
-```python 
-def test1_estado_inicial_inactivo(lavadero_vacio):
-    """Test 1: Verifica el estado inicial del lavadero."""
-    assert lavadero_vacio.fase == Lavadero.FASE_INACTIVO
-    assert lavadero_vacio.ingresos == 0.0
-    assert lavadero_vacio.ocupado is False
-
-```
-
-2. Cuando se intenta comprar un lavado con encerado pero sin secado a mano, se produce una ValueError.
-
-En este otro caso sería algo así, también en `Unittest`:
-
-```python
-def test2_excepcion_encerado_sin_secado(lavadero):
-    """
-    Comprueba que encerar sin secado a mano lanza ValueError.
-    """
-    with self.assertRaises(ValueError):
-    self.lavadero._hacer_lavado(False, False, True)
-```
-> Este test de excepción se puede completar para que nos compare la cadena de mensaje de error.
-
-3. Cuando se intenta hacer un lavado mientras que otro ya está en marcha, se produce una ValueError.
-4. Si seleccionamos un lavado con prelavado a mano, los ingresos de lavadero son 6,50€.
-5. Si seleccionamos un lavado con secado a mano, los ingresos son 6,00€.
-6. Si seleccionamos un lavado con secado a mano y encerado, los ingresos son 7,20€.
-7. Si seleccionamos un lavado con prelavado a mano y secado a mano, los ingresos son 7,50€.
-8. Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado, los ingresos son 8,70€.
-
-> Para los siguientes tests recuerda que tienes la función `def ejecutar_y_obtener_fases(self, prelavado, secado, encerado)`
-> Esta función auxiliar nos devuleve una lista con las fases por las que ha pasado un lavado.
-```python
-    # Esta función es útil para pruebas unitarias, no es parte del lavadero real
-    # nos crea un array con las fases visitadas en un ciclo completo
-
-    def ejecutar_y_obtener_fases(self, prelavado, secado, encerado):
-        """Ejecuta un ciclo completo y devuelve la lista de fases visitadas."""
-        self._hacer_lavado(prelavado, secado, encerado)
-        fases_visitadas = [self.fase]
-        
-        while self.ocupado:
-            # Usamos un límite de pasos para evitar bucles infinitos en caso de error
-            if len(fases_visitadas) > 15:
-                raise Exception("Bucle infinito detectado en la simulación de fases.")
-            self.avanzarFase()
-            fases_visitadas.append(self.fase)
-            
-        return fases_visitadas
-```
-
-9. Si seleccionamos un lavado sin extras y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 6, 0. En este caso el test podría ser algo así: 
-
-```python
-    def test9_flujo_rapido_sin_extras(self):
-        """Test 9: Simula el flujo rápido sin opciones opcionales."""
-        fases_esperadas = [0, 1, 3, 4, 5, 6, 0]
-        # Ejecutar el ciclo completo y obtener las fases
-        fases_obtenidas = self.lavadero.ejecutar_y_obtener_fases(prelavado=False, secado=False, encerado=False)
-        
-        # Verificar que las fases obtenidas coinciden con las esperadas
-        self.assertEqual(fases_obtenidas, fases_esperadas, 
-                        f"Secuencia de fases incorrecta.\nEsperadas: {fases_esperadas}\nObtenidas: {fases_obtenidas}")
-      
- 
-
-```
-10. Si seleccionamos un lavado con prelavado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 6, 0.
-11. Si seleccionamos un lavado con secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 0. 
-12. Si seleccionamos un lavado con secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 3, 4, 5, 7, 8, 0.
-13. Si seleccionamos un lavado con prelavado a mano y secado a mano y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 0.
-14. Si seleccionamos un lavado con prelavado a mano, secado a mano y encerado y vamos avanzando fases, el lavadero pasa por las fases 0, 1, 2, 3, 4, 5, 7, 8, 0.
+Realiza lo indicado en la sección `Entrega` de la actividad.
 
 
-> !!!IMPORTANTE¡¡¡ Este código tiene errores que deberían de descubrir las pruebas.
->
-> **Apartado 3**. A partir de los resultados de los tests, se deben corregir también los problemas encontrados en el código hasta que todos los tests sean correctos.
-> 
-> **Documenta los errores encontrados** indicando a qué se debían esos errores y cómo lo has solucionado y adjunta los test pasados.
-> Ejecuta los test con modificador `-v` (Verbose), para que nos muestre información de los tests:
+## Apartado 4 - Reflexión sobre los riesgos de las aplicaciones.
 
-```python
-# Para Unittest 
-# PYTHONPATH=src python3 -m unittest ./tests/ruta_al_test.py -v
-# también podemos usarlo con discover indicando carpeta de tests
-# PYTHONPATH=src python3 -m unittest discover -v /tests
-# En Pytest podemos también usar -v
-# PYTHONPATH=src pytest tests/ruta_al_test.py -v
-```
-## 3. Ejecución de la aplicación en un entorno controlado
+Deberás de hacer una reflexión personal explicando los riesgos de la aplicación que hemos utilizado en el apartado anterior, y si son los mismo riesgos que otro tipo de aplicación: bancaria, de salud, de RRSS, es decir, una reflexión sobre los **riesgos de las aplicaciones** desarrolladas, en **función de sus características**.
 
-> **Apartado 4**: Ejecuta la aplicación en un entorno controlado (Sandbox). Si has realizado la actividad [Actividad de Sandboxing](../Actividad-Sandboxing/) con otra aplicación, también es válida.
-
-## 4. Reflexión sobre comparación de la infraestructura de seguridad de los lenguajes.
-
-> **Apartado 5**. Has podido leer en [los contenidos teóricos](../ContenidosTeoricos/PPSUnidad1-InfraestructurasSeguridad.pdf)las medidas de seguridad que incorporan algunos de los lenguajes. **Escribe una reflexión personal** acerca de ellos. También puedes basarte en la tabla comparativa o en búsquedas sobre los lenguajes de programación más seguros. 
 ---
 
 # ENTREGA
@@ -272,11 +147,15 @@ La documentación generada en la rama `gh-pages` del repositorio (*recuerda que 
 
 La documentación en `GitHub Pages` debe de contener al menos:
 - Archivo **Index.md** con **secciones**:
-    - **Elementos de Python**: donde figure el código comentado que has creado o enlace a `Jupyter Notebook`.
-    - **Ejecución y Depuración**: Problemas que había en el código y cómo se ha solucionado. Debe de estar explicado y contener capturas de pantalla. (Recuerda que las capturas de pantalla deben de ser a pantalla completa y deben de observarse el terminal con tu nombre y/o tu imagen de la plataforma moodle).
-    - **Pruebas** con la explicación sobre que las pruebas que has hecho, errores encontrados, el código de dichas pruebas y la ejecución del conjunto de pruebas en el IDE.
-    - **Ejecución en Sandbox** con la explicación del proceso de ejecución en una **SandBox** y capturas de pantalla del proceso.
-    - **Reflexión sobre comparación de la infraestructura de seguridad de los lenguajes** con la reflexión que has hecho en el punto 4.
+  
+    - **Apartado 1 - Trazado de vulnerabiliad**: donde figure la documentación sobre el trazado de la vulnerabilidad que has realizado en la actividad [Actividad-TrazadoVulnerabilidad](../Actividad-TrazadoVulnerabilidad/README.md). El repositorio deberá contener el registro de CVE o `CVE Record` en formato `json` que has descargardo.
+
+    - **Apartado 2 - Análisis de vulnerabilidad en máquina vulnerable**: En ella documentarás brévemente la explotación y securización de la vulnerabilidad que hemos realizado en la [Actividad-MaquinasVulnerables](../Actividad-MaquinasVulnerables/README.md). Recuerda que en esa actividad hemos creado el archivo `analisisVulnerabilidad.md`. 
+
+    - **Apartado 3 - Comprobación de los requisitos de Seguridad de una aplicación**: En ella documentarás el análisis de la comprobación de los requisitos de seguridad que has realizado en la [Actividad-ComprobaciónREquisitosSeguridadAplicación](../Actividad-ComprobacionRequisitosSeguridadAplicacion/README.md). Recuerda que en ella hemos realizado el documento `ComprobacionRequisitosAplicacion_Tu_nombre.md` junto con la **hoja de cálculo** con la comprobación de los requisitos.
+
+    - **Apartado 4 - Reflexión sobre los riesgos de las aplicaciones**: En ella deberás de hacer una reflexión personal explicando los riesgos de la aplicación que hemos utilizado en el apartado anterior, y si son los mismo riesgos que otro tipo de aplicación: bancaria, de salud, de RRSS, es decir, una reflexión sobre los **riesgos de las aplicaciones** desarrolladas, en **función de sus características**.
+
 
 El archivo comprimido se nombrará siguiendo las siguientes pautas:
 
@@ -298,11 +177,11 @@ Si **no se adjunta el repositorio comprimido, no se indica la dirección del enl
 
 En el resto de los casos, la puntuación de los apartados es la siguiente:
 
-- Apartado 1. Creación del repositorio  (hasta 1,5 puntos).  
-- Apartado 2. Creación de WorkFlow de `GitHub Actions` (hasta 1,5 puntos).  
-- Apartado 3. Vinculación con GitHub Pages (hasta 1,5 puntos).  
-- Apartado 4. Creación de un contenedor de servicios `NGINX` con Docker(hasta 1,5 puntos).  
-- Apartado 5. Documentación: presentación, extensión, exactitud, riqueza en síntaxis de MarkDown, etc. (hasta 4 puntos).
+1. Apartado 1 - Trazado de vulnerabiliad (hasta 2 puntos).
+1. Apartado 2 - Análisis de vulnerabilidad en máquina vulnerable (hasta 2 punto).
+1. Apartado 3 - Comprobación de los requisitos de Seguridad de una aplicación (hasta 2 puntos).
+1. Apartado 4 - Reflexión sobre los riesgos de las aplicaciones (hasta 1 punto).
+1. Apartado 5 - Documentación: presentación, extensión, exactitud, riqueza en síntaxis de MarkDown, etc de la documentación del repostorio. (hasta 3 puntos).
 
 ---
 [![Licencia: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
