@@ -82,7 +82,7 @@ Utilizaremos **`GitHub Classroom`** para la entrega de esta actividad.
 
 ## 1. Creación del repositorio
 
-Deberas crear un repositorio en `GitHub.com` con nombre `PPS-Unidad0-Tarea-Tu_nombre`.  
+En esta ocasión no debes de utilizar el repositorio creado en este classroom, sino que deberas crear un repositorio en `GitHub.com` con nombre `PPS-Unidad0-Tarea-Tu_nombre`.  
 Deberás documentar las diferentes fases o partes de la tarea en MarkDown en diferentes archivos. 
 
 La base del repositorio es la misma que hemos utilizado en [Actividad-DevSecOps](https://github.com/jmmedinac03vjp/PuestaProduccionSegura/blob/main/Unidad0-Herramientas/Actividad-DevSecOps/README.md).
